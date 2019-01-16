@@ -17,6 +17,12 @@ public class PlayerMovement : MonoBehaviour {
         {
             Debug.Log("Key LeftArrow Pressed: Rotate");
 
+            this.transform.Rotate(new Vector3(0, -rotateSpeed * Time.deltaTime, 0));
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            Debug.Log("Key RightArrow Pressed: Rotate");
+
             this.transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
         }
     }
