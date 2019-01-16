@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public float speed = 5.0f;
-    public float rotateSpeed = 20.0f;
+    public float rotateSpeed = 60.0f;
 
 
 	// Update is called once per frame
