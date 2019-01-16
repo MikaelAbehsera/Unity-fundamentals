@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
+    /// <summary>
+    /// Movement for the player will handle all movement and rotation.
+    /// </summary>
     void Movement ()
     {
 
@@ -32,7 +35,6 @@ public class PlayerMovement : MonoBehaviour {
                 Debug.Log("Key LeftArrow Pressed: Rotate");
 
                 this.transform.Rotate(new Vector3(0, -rotateSpeed * Time.deltaTime, 0));
-
             }
 
         }
