@@ -20,15 +20,39 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            Debug.Log("Key LeftArrow Pressed: Rotate");
+            if (canMoveSideways)
+            {
+                Debug.Log("Key LeftArrow Pressed.");
 
-            this.transform.Rotate(new Vector3(0, -rotateSpeed * Time.deltaTime, 0));
+                this.transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
+
+            }
+            else
+            {
+                Debug.Log("Key LeftArrow Pressed: Rotate");
+
+                this.transform.Rotate(new Vector3(0, -rotateSpeed * Time.deltaTime, 0));
+
+            }
+
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            Debug.Log("Key RightArrow Pressed: Rotate");
+            if (canMoveSideways)
+            {
+                Debug.Log("Key RightArrow Pressed.");
 
-            this.transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
+                this.transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
+
+            }
+            else
+            {
+                Debug.Log("Key RightArrow Pressed: Rotate");
+
+                this.transform.Rotate(new Vector3(0, rotateSpeed * Time.deltaTime, 0));
+
+            }
+
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
@@ -44,18 +68,6 @@ public class PlayerMovement : MonoBehaviour {
             this.transform.Translate(new Vector3(0, 0, -moveSpeed * Time.deltaTime));
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            Debug.Log("Key LeftArrow Pressed.");
-
-            this.transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            Debug.Log("Key RightArrow Pressed.");
-
-            this.transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
-        }
 
         if (Input.GetKey(KeyCode.W))
         {
