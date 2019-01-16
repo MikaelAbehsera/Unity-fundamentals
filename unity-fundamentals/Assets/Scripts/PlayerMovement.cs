@@ -24,13 +24,13 @@ public class PlayerMovement : MonoBehaviour {
         {
             Debug.Log("Key LeftArrow Pressed.");
 
-            this.transform.Translate(new Vector3(0, 0, -speed * Time.deltaTime));
+            this.transform.Translate(new Vector3( speed * Time.deltaTime, 0, 0 ));
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             Debug.Log("Key RightArrow Pressed.");
 
-            this.transform.Translate(new Vector3(0, 0, -speed * Time.deltaTime));
+            this.transform.Translate(new Vector3( -speed * Time.deltaTime, 0, 0 ));
         }
     }
 }
