@@ -8,11 +8,17 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if( Input.GetKey(KeyCode.UpArrow) )
+        if( Input.GetKey(KeyCode.UpArrow) )
         {
             Debug.Log("Key UpArrow Pressed.");
 
-            this.transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
+            this.transform.Translate( new Vector3(0, 0, speed * Time.deltaTime) );
+        } 
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Debug.Log("Key DownArrow Pressed.");
+
+            this.transform.Translate( new Vector3(0, 0, -speed * Time.deltaTime ) );
         }
     }
 }
