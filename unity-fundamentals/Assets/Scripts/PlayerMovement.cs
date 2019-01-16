@@ -26,6 +26,11 @@ public class PlayerMovement : MonoBehaviour {
 
             this.transform.Translate(new Vector3(0, 0, -speed * Time.deltaTime));
         }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            Debug.Log("Key DownArrow Pressed.");
 
+            this.transform.Translate(new Vector3(0, 0, -speed * Time.deltaTime));
+        }
     }
 }
