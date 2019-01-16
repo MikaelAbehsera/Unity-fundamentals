@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public float moveSpeed = 5.0f;
-    public float rotateSpeed = 60.0f;
+    public float rotateSpeed = 70.0f;
+    public bool canMoveSideways = false;
 
+    // Update is called once per frame
+    void Update () {
 
-	// Update is called once per frame
-	void Update () {
-
-        //Movement();
+        Movement();
 
     }
 
