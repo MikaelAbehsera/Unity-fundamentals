@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        Movement();
+
+        //Movement();
 
         if(Input.GetKey (KeyCode.LeftArrow))
         {
