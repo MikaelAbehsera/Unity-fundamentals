@@ -38,9 +38,9 @@ public class PlayerMovement : MonoBehaviour {
 
             this.transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
         }
-        else if (Input.GetKey(KeyCode.Z))
+        else if (Input.GetKey(KeyCode.S))
         {
-            Debug.Log("Key Z Pressed.");
+            Debug.Log("Key S Pressed.");
 
             this.transform.Translate(new Vector3(0, -speed * Time.deltaTime, 0));
         }
