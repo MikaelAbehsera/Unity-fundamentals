@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour {
 
             this.transform.Translate( new Vector3(0, 0, -speed * Time.deltaTime ) );
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             Debug.Log("Key LeftArrow Pressed.");
 
@@ -32,7 +33,8 @@ public class PlayerMovement : MonoBehaviour {
 
             this.transform.Translate(new Vector3( speed * Time.deltaTime, 0, 0 ));
         }
-        else if (Input.GetKey(KeyCode.W))
+
+        if (Input.GetKey(KeyCode.W))
         {
             Debug.Log("Key W Pressed.");
 
