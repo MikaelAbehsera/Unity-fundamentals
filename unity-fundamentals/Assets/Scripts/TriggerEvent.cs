@@ -22,7 +22,7 @@ public class TriggerEvent : MonoBehaviour {
         {
             lightBulb.SetActive(false);
             wall.GetComponent<ObjectScaling>().DisableScale();
-            *
+
         }
     }
 

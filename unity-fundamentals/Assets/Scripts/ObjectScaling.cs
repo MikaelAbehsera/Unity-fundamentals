@@ -38,12 +38,12 @@ public class ObjectScaling : MonoBehaviour {
         }
     }
 
-    void EnableScale()
+    public void EnableScale()
     {
         this.transform.localScale = new Vector3(scaleAmount, scaleAmount, scaleAmount);
     }
 
-    void DisableScale()
+    public void DisableScale()
     {
         this.transform.localScale = originalScale;
     }
