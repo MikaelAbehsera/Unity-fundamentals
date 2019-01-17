@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectColor : MonoBehaviour {
 
     public Color changedColor = Color.white;
-    public Color originalColor = Color.white;
+    private Color originalColor = Color.white;
 
 
     /// <summary>
