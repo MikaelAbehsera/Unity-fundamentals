@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightBulb: {fileID: 1229215728}
-  wall: {fileID: 0}
+  wall: {fileID: 1229706181}
 --- !u!1 &2108758591
 GameObject:
   m_ObjectHideFlags: 0
