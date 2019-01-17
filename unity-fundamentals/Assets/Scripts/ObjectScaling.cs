@@ -5,16 +5,27 @@ using UnityEngine;
 public class ObjectScaling : MonoBehaviour {
 
     public float scaleAmount = 3.0f;
+    public Vector3 originalScale = Vector3.zero;
 
-	// Use this for initialization
+	/// <summary>
+    /// Start this instance.
+    /// </summary>
 	void Start () {
 		
 	}
-	
-    
 
-	// Update is called once per frame
-	void Update () {
+    /// <summary>
+    /// Awake this instance.
+    /// </summary>
+    void Awake()
+    {
+        originalScale = this.transform.localScale;
+    }
+
+    /// <summary>
+    /// Update this instance.
+    /// </summary>
+    void Update () {
 		if (Input.GetKeyDown(KeyCode.G))
         {
             this.transform.localScale = new Vector3(scaleAmount, scaleAmount, scaleAmount);
