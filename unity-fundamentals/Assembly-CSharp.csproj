@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\ObjectScaling.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\TriggerExample.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/Mikaelabehsera/code/Unity-fundamentals/unity-fundamentals/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
