@@ -14,8 +14,16 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        GameObject obj = Instantiate(spawnType) as GameObject;
 
-        obj.transform.position = this.transform.position;
+        if (Input.GetKeyDown (KeyCode.Space))
+        {
+            GameObject obj = Instantiate(spawnType) as GameObject;
+
+            obj.transform.position = this.transform.position;
+
+            obj.AddComponent<Rigidbody>();
+
+            obj.name = "mySphere";
+        }
 	}
 }
