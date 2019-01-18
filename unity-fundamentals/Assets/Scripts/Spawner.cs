@@ -24,6 +24,7 @@ public class Spawner : MonoBehaviour {
             obj.AddComponent<Rigidbody>();
 
             obj.name = "mySphere";
+
         }
 	}
 }
