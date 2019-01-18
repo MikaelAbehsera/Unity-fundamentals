@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\ObjectColor.cs" />
     <Compile Include="Assets\Scripts\ObjectScaling.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
     <Compile Include="Assets\Scripts\TriggerExamples.cs" />
     <Reference Include="UnityEditor.StandardEvents">
