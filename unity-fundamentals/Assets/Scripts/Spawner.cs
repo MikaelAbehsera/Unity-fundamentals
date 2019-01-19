@@ -6,7 +6,8 @@ public class Spawner : MonoBehaviour {
 
     public GameObject spawnType = null;
     public float scaleMin = 0.2f;
-    public float scaleMax = 1.0f;
+    public float scaleMax = 0.5f;
+    public float force = 100.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +29,7 @@ public class Spawner : MonoBehaviour {
 
             obj.AddComponent<Rigidbody>();
 
-            obj.GetComponent<Rigidbody>().AddRelativeForce(Vector3.back * 20);
+            obj.GetComponent<Rigidbody>().AddRelativeForce(Vector3.back * force);
 
             obj.name = "mySphere";
 

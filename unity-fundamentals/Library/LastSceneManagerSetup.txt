@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Example_1_Unity_Scene.unity
+- path: Assets/Scenes/Example_5_Spawn_An_Object.unity
   isLoaded: 1
   isActive: 1
